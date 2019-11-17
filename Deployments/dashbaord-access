@@ -1,0 +1,10 @@
+ kubernetes-dashboard
+k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0
+
+could not find the requested resource (get services heapster).
+
+Solution : accesss with kubectl proxy at port 8001
+  http://localhost:8001/api/v1/namespaces/kube-system/services/http:kubernetes-dashboard:/proxy/#!/login
+
+192.168.244.129
+192.168.244.129 
